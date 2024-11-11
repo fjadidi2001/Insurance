@@ -1,5 +1,4 @@
 
-
 | File Name                                       | Description                                                                                                                                                                                                                                                                                                                                                                                            |
 |-------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Analyze_Telematics_syn.ipynb**                | Analyzes synthetic telematics data with a high number of zero values in `AMT_Claim`, a typical scenario in insurance where claims are rare. Discusses potential techniques like zero-inflated models (e.g., ZIP, ZINB, and Zero-Inflated Beta) and two-stage modeling to handle zero-inflated data. Outlier handling methods like Winsorization and robust regression are also considered.                  |
@@ -14,32 +13,5 @@
 | **Risk_Category_TabNet_best_version.ipynb**     | A refined version of `Risk_Category` prediction with PCA applied for dimensionality reduction before training the TabNet model. Achieves high accuracy (99.53%), showing improved performance due to feature reduction and optimal data processing.                                                                                                          |
 | **insurance_classification_ensemble_model_claim_YN.ipynb** | Utilizes both TabNet and DNN in an ensemble model for `ClaimYN` classification. Metrics for the ensemble model include 97.47% accuracy, with other metrics calculated for deeper insights into model performance (precision, recall, F1 score, AUC).                                                                                                          |
 | **predict_ClaimYN_with_combined_models.ipynb**  | Uses SMOTE, feature engineering, and visualization for `ClaimYN` prediction. Evaluates TabNet, XGBoost, and ensemble models, with detailed performance metrics, showing the impact of ensemble approaches for robustness.                                                                                                                                                      |
-| **telematics_syn_Risk_Category.ipynb**          | Implements TabNet for predicting `Risk_Category` using synthetic telematics data, achieving near-perfect validation accuracy (99.98%) and F1 score (99.98%). The model is saved for future use, indicating it has performed well on this synthetic datasetValidation Accuracy: 0.9998,Validation F1 Score: 0.9998, Successfully saved model at tabnet_model.zip.                                                                                                                                                    |
-
-| **telematics_syn_Risk_Category.ipynb**          |
-1. **Better Organization**: Created a class `InsuranceRiskClassifier` that encapsulates all the functionality, making the code more maintainable and reusable.
-
-2. **Added SVM Model**: Included Support Vector Machine classifier alongside TabNet for comparison.
-
-3. **Improved Error Handling**: Added logging to track the progress and potential issues.
-
-4. **Type Hints**: Added type hints to make the code more readable and maintainable.
-
-5. **Modular Design**: Split the functionality into smaller, focused methods that each handle a specific task.
-
-6. **Better Preprocessing**:
-   - More robust feature preparation
-   - Added option to save preprocessor for future use
-   - Improved categorical encoding
-
-7. **Model Evaluation**:
-   - Added comprehensive evaluation metrics
-   - Side-by-side comparison of TabNet and SVM performance
-   - Detailed classification reports
-
-8. **Memory Efficiency**: Better handling of large datasets through proper data processing steps.
-                                                                                                        |
-
-
-
-
+| **telematics_syn_Risk_Category.ipynb**          | Implements TabNet for predicting `Risk_Category` using synthetic telematics data, achieving near-perfect validation accuracy (99.98%) and F1 score (99.98%). The model is saved for future use, indicating it has performed well on this synthetic dataset. Validation Accuracy: 0.9998, Validation F1 Score: 0.9998, Successfully saved model at tabnet_model.zip.                                                                                                       |
+| **improvements_in_telematics_syn_Risk_Category.ipynb** | 1. **Better Organization**: Created a class `InsuranceRiskClassifier` that encapsulates all the functionality, making the code more maintainable and reusable.<br>2. **Added SVM Model**: Included Support Vector Machine classifier alongside TabNet for comparison.<br>3. **Improved Error Handling**: Added logging to track the progress and potential issues.<br>4. **Type Hints**: Added type hints to make the code more readable and maintainable.<br>5. **Modular Design**: Split the functionality into smaller, focused methods that each handle a specific task.<br>6. **Better Preprocessing**: More robust feature preparation, added option to save preprocessor for future use, improved categorical encoding.<br>7. **Model Evaluation**: Added comprehensive evaluation metrics, side-by-side comparison of TabNet and SVM performance, detailed classification reports.<br>8. **Memory Efficiency**: Better handling of large datasets through proper data processing steps. |
