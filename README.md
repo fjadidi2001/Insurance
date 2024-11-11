@@ -16,6 +16,29 @@
 | **predict_ClaimYN_with_combined_models.ipynb**  | Uses SMOTE, feature engineering, and visualization for `ClaimYN` prediction. Evaluates TabNet, XGBoost, and ensemble models, with detailed performance metrics, showing the impact of ensemble approaches for robustness.                                                                                                                                                      |
 | **telematics_syn_Risk_Category.ipynb**          | Implements TabNet for predicting `Risk_Category` using synthetic telematics data, achieving near-perfect validation accuracy (99.98%) and F1 score (99.98%). The model is saved for future use, indicating it has performed well on this synthetic datasetValidation Accuracy: 0.9998,Validation F1 Score: 0.9998, Successfully saved model at tabnet_model.zip.                                                                                                                                                    |
 
+| **telematics_syn_Risk_Category.ipynb**          | 1. **Better Organization**: Created a class `InsuranceRiskClassifier` that encapsulates all the functionality, making the code more maintainable and reusable.
+
+2. **Added SVM Model**: Included Support Vector Machine classifier alongside TabNet for comparison.
+
+3. **Improved Error Handling**: Added logging to track the progress and potential issues.
+
+4. **Type Hints**: Added type hints to make the code more readable and maintainable.
+
+5. **Modular Design**: Split the functionality into smaller, focused methods that each handle a specific task.
+
+6. **Better Preprocessing**:
+   - More robust feature preparation
+   - Added option to save preprocessor for future use
+   - Improved categorical encoding
+
+7. **Model Evaluation**:
+   - Added comprehensive evaluation metrics
+   - Side-by-side comparison of TabNet and SVM performance
+   - Detailed classification reports
+
+8. **Memory Efficiency**: Better handling of large datasets through proper data processing steps.
+                                                                                                        |
+
 
 
 
